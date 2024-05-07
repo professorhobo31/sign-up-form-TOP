@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(fonts/Norse-Bold.otf);
+}
+
+body * {
+    display: flex;
+}
+
+#signupContainer {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    border: 2px solid yellow;
+}
+
+#logo {
+    background-color: rgba(24, 24, 24, 0.5);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Norse Bold', 'Times New Roman', Times, serif;
+    font-size: 45px;
+}
+
+#footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    gap: 2px;
+}
+
+#leftContainer {
+    border: 1px solid red;
+    background-image: url(Images/annie-spratt-8mqOw4DBBSg-unsplash.jpg);
+    background-size: cover;
+    width: 400px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#leftContainer>p, #leftContainer a {
+    color: white;
+}
+
+#rightContainer {
+    border: 1px solid blue;
+    width: 500px;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 3%;
+    padding-right: 10%;
+}
+
+#topTextContainer {
+    flex-direction: column;
+}
+
+#formContainer {
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px pink solid;
+}
+
+#bottomContainer {
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+#bottomContainer>button {
+    width: 165px;
+    height: 30px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
