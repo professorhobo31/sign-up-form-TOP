@@ -13,8 +13,12 @@ body * {
     display: flex;
 }
 
-form, input, fieldset {
+form, input {
     display: inline-block;
+}
+
+p>a {
+    margin-left: 4px;
 }
 
 #signupContainer {
@@ -90,6 +94,12 @@ form, input, fieldset {
     height: 200px;
     border: 2px pink solid;
     gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 hr {
