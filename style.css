@@ -19,6 +19,7 @@ form, input {
 
 p>a {
     margin-left: 4px;
+    color: rgb(89,109,72);
 }
 
 #signupContainer {
@@ -26,7 +27,7 @@ p>a {
     width: 900px;
     height: 600px;
     margin: auto;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 #logo {
@@ -46,7 +47,7 @@ p>a {
 }
 
 #leftContainer {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-image: url(Images/annie-spratt-8mqOw4DBBSg-unsplash.jpg);
     background-size: cover;
     width: 344px;
@@ -62,7 +63,7 @@ p>a {
 }
 
 #rightContainer {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: calc(900px - 344px);
     flex-direction: column;
     flex-grow: 1;
@@ -74,7 +75,7 @@ p>a {
     width: calc(100% - 15%);
     padding-left: 5%;
     padding-right: 10%;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(235, 235, 235);
 }
 
 #topTextContainer>p {
@@ -92,14 +93,33 @@ p>a {
     margin: 0;
     width: 100%;
     height: 200px;
-    border: 2px pink solid;
+    /* border: 2px pink solid; */
     gap: 20px;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
     gap: 5px;
+}
+
+label {
+    font-family: "Roboto Medium", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 9px;
+}
+
+fieldset {
+    justify-content: space-between;
+    padding-right: 20%;
+    padding-left: 5%;
+    border: 0px;
+}
+ 
+fieldset>div {
+    display: flex;
+    flex-direction: column;
 }
 
 hr {
@@ -111,7 +131,7 @@ hr {
     width: 165px;
     height: 30px;
     border-radius: 4px;
-    background-color: rgb(98, 150, 97);
+    background-color: rgb(89,109,72);
     border: 0px;
     color: antiquewhite;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
