@@ -75,6 +75,9 @@ p>a {
     width: calc(100% - 15%);
     padding-left: 5%;
     padding-right: 10%;
+}
+
+#bottomContainer {
     background-color: rgb(235, 235, 235);
 }
 
@@ -92,7 +95,7 @@ p>a {
     gap: 20px;
     margin: 0;
     width: 100%;
-    height: 200px;
+    height: 150px;
     /* border: 2px pink solid; */
     gap: 20px;
 }
@@ -128,7 +131,7 @@ hr {
 } 
 
 #bottomContainer>button {
-    width: 165px;
+    width: 150px;
     height: 30px;
     border-radius: 4px;
     background-color: rgb(89,109,72);
@@ -136,7 +139,7 @@ hr {
     color: antiquewhite;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
     justify-content: center;
     align-items: center;
 }
