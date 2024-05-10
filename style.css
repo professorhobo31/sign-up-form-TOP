@@ -176,8 +176,25 @@ fieldset>div {
     align-items: center;
 }
 
+button {
+    position: relative;
+    left: 5%;
+    top: 8%;
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgb(89, 109, 72);
+    border: 0px;
+    color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
 #bottomContainer>p {
-    margin-top: 16px;
+    margin-top: 10%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
 }
