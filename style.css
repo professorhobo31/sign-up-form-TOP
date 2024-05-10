@@ -8,18 +8,28 @@
     src: url(fonts/Roboto/Roboto-Medium.ttf);
 }
 
+:root {
+    --width-input-border: 1px;
+    --radius-inputs: 0.25em;
+    --padding-inputs: 0.25em;
+}
 
 body * {
     display: flex;
 }
 
-form, input {
+form,
+input {
     display: inline-block;
 }
 
 p>a {
     margin-left: 4px;
-    color: rgb(89,109,72);
+    color: rgb(89, 109, 72);
+}
+
+p+p+p {
+    margin-top: 40px;
 }
 
 #signupContainer {
@@ -58,7 +68,8 @@ p>a {
     align-items: center;
 }
 
-#leftContainer>p, #leftContainer a {
+#leftContainer>p,
+#leftContainer a {
     color: white;
 }
 
@@ -69,7 +80,8 @@ p>a {
     flex-grow: 1;
 }
 
-#topTextContainer, #bottomContainer {
+#topTextContainer,
+#bottomContainer {
     flex-direction: column;
     flex-grow: 1;
     width: calc(100% - 15%);
@@ -112,9 +124,24 @@ label {
     font-size: 9px;
 }
 
+input {
+    padding: var(--padding-inputs);
+    border: var(--width-input-border) solid rgba(24, 24, 24, 0.25);
+    border-radius: var(--radius-inputs);
+}
+
+input:invalid {
+    padding: var(--padding-inputs);
+    border: var(--width-input-border) solid rgba(255, 13, 0, 0.5);
+    border-radius: var(--radius-inputs);
+}
+
 input:focus {
     outline: none;
-    border: 1px, solid, rgba(49, 93, 228, 0.5);
+    padding: var(--padding-inputs);
+    border: var(--width-input-border) solid rgba(0, 115, 255, 1);
+    border-radius: var(--radius-inputs);
+    box-shadow: 0px 0px 4px;
 }
 
 fieldset {
@@ -123,7 +150,7 @@ fieldset {
     padding-left: 5%;
     border: 0px;
 }
- 
+
 fieldset>div {
     display: flex;
     flex-direction: column;
@@ -139,7 +166,7 @@ fieldset>div {
     width: 150px;
     height: 30px;
     border-radius: 4px;
-    background-color: rgb(89,109,72);
+    background-color: rgb(89, 109, 72);
     border: 0px;
     color: antiquewhite;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
